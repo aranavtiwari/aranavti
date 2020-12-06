@@ -1,0 +1,368 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #0e111a;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    word-spacing: 7.5px;
+    line-height: 1.7;
+    color: #777;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.hello {
+    position: relative;
+    top: 40px;
+    font-family: monospace;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    font-size: 50px;
+    font-weight: 300;
+
+}
+
+.lodo {
+    padding: 0;
+    animation-name: moveInDown;
+    animation-duration: 4s;
+    height: 70vh;
+    width: 100%;
+
+}
+
+
+.section {
+    margin: 0 22%;
+    margin-top: 20px;
+    letter-spacing: 0.8px;
+    word-spacing: 1.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    font-family: cursive;
+    font-size: 22px;
+    padding: 0 6%;
+    font-weight: 500;
+}
+
+.name,
+.resume {
+    background: linear-gradient(to right, #fe8409 0%, #e8326d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.synox-name,
+.ascs-name {
+    background: linear-gradient(to right, #38b6ff 0%, #e8326d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading , .skill{
+    font-size: 50px;
+    font-family: serif;
+    margin: 20px 20px 90px 20px;
+    
+}
+
+.project {
+    display: flex;
+    flex-direction: column
+}
+
+.project-name {
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+.new {
+    text-transform: uppercase;
+    font-size: 54px;
+    align-items: center;
+    padding: 120px 150px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s;
+    margin:30px;
+    background-color: #0e0e16;
+}
+
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25%;
+    
+    
+}
+
+.skill-content{
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    background: #0e0e16;
+    padding:0 40px;
+    border: 1px solid #0e0e16; 
+    border-radius: 220px;
+    
+    
+}
+/*==========================================================*/
+.new:hover{
+    box-shadow: 0 0 10px #e8326d, 0 0 30px #e8326d , 0 0 50px #e8326d;
+    transition: 1.5s;
+}
+
+.new span {
+    position: absolute;
+    display: block;
+
+}
+
+.new span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+
+
+.new:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+
+.new span:nth-child(3) {
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+
+
+.new:hover span:nth-child(3){
+    left: -100%;
+    transition: 1s;
+}
+
+
+
+.new span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+
+
+.new:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.15s;
+}
+
+
+.new span:nth-child(4) {
+    left:0;
+    top:100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+
+
+.new:hover span:nth-child(4){
+    top: -100%;
+    transition: 1s;
+    transition-delay: 0.15s;
+}
+
+
+
+/*======================================================*/
+
+@media (max-width:736px) {
+    .header {
+        margin: 0px;
+        height: 60vh;
+    }
+
+    .lodo {
+        height: 300px;
+    }
+
+    .hello {
+        position: relative;
+        top: 10px;
+        font-size: 30px;
+        font-weight: 300;
+
+
+    }
+
+    .section {
+        margin: 0 2%;
+        margin-top: 20px;
+        letter-spacing: 0.8px;
+        word-spacing: 1.5px;
+    }
+
+    .intro {
+        font-family: cursive;
+        font-size: 18px;
+        padding: ;
+        font-weight: 500;
+    }
+
+    .btn-white {
+        margin: 0;
+    }
+    .project-name{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+
+
+}
+
+
+/*====================================================================*/
+
+.pbutton {
+    margin: 95px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    /*first one is x-direction
+                                         2nd one is y-direction 3 one is blur 4is shadow color*/
+}
+
+/*time when button clicked*/
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-white {
+    background-color: #0e0e16;
+}
+
+
+/*================================================================================*/
+
+@keyframes moveInUp {
+
+    /*0% and 100 are the transition state  it start from 0 and end to 100*/
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    80% {
+        transform: translateY();
+        /*sor roation we use :roatate(90);*/
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes moveInDown {
+
+    /*0% and 100 are the transition state  it start from 0 and end to 100*/
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    80% {
+        transform: translateY(10px);
+        /*sor roation we use :roatate(90);*/
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes moveInRight {
+
+    /*0% and 100 are the transition state  it start from 0 and end to 100*/
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-30px);
+        /*sor roation we use :roatate(90);*/
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
