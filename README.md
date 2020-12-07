@@ -1,4 +1,5 @@
 # SYNOX
 created simple UI using sass and HTML
 
-# website -
+# website 
+https://aranavtiwari.github.io/SYNOX/
