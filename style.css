@@ -62,7 +62,8 @@ section {
     -webkit-text-fill-color: transparent;
     position: absolute;
     top: 905px;
-    left: 495px
+    left: 495px;
+    border-radius:5px;
 }
 
 
